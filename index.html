@@ -2,68 +2,113 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Make Money Online</title>
+  <title>Earn Extra Income Easily</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .notification {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      background-color: #fff;
+      padding: 15px 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+      font-size: 14px;
+      display: none;
+      z-index: 9999;
+      animation: fadeInOut 6s ease-in-out;
+    }@keyframes fadeInOut {
+  0% { opacity: 0; transform: translateY(20px); }
+  10% { opacity: 1; transform: translateY(0); }
+  90% { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(20px); }
+}
+
+  </style>
 </head>
 <body>
   <header class="hero">
     <div class="container">
-      <h1>Earn Real Money Online</h1>
-      <p>Join thousands already making money with simple tasks from their phones. No experience needed.</p>
-      <a href="https://areyourealhuman.com/cl/i/kldnoq" class="btn">Start Now</a>
+      <h1>Make Real Money Online 💸</h1>
+      <p>Discover a proven method used by thousands in the US, UK & Canada to earn cash online in just minutes a day.</p>
+      <a href="https://areyourealhuman.com/cl/i/kldnoq" class="btn">Get Started Now</a>
     </div>
   </header>  <section class="how-it-works">
     <div class="container">
       <h2>How It Works</h2>
       <div class="steps">
         <div class="step">
-          <h3>📥 Step 1: Complete an Offer</h3>
-          <p>Choose a simple task — like installing an app or answering a few questions.</p>
+          <h3>✅ Step 1: Choose an Offer</h3>
+          <p>Pick a quick task like downloading an app or completing a short survey.</p>
         </div>
         <div class="step">
           <h3>🔓 Step 2: Unlock Access</h3>
-          <p>After completing the offer, you'll gain access to the rewards page.</p>
+          <p>After finishing the task, you'll gain access to the rewards page instantly.</p>
         </div>
         <div class="step">
-          <h3>💸 Step 3: Start Earning</h3>
-          <p>Use trusted apps that pay you directly via PayPal, gift cards, and more.</p>
+          <h3>💰 Step 3: Start Earning</h3>
+          <p>Get redirected to legit money-making platforms used by real users daily.</p>
         </div>
       </div>
-      <a href="https://areyourealhuman.com/cl/i/kldnoq" class="btn">Get Started</a>
+      <a href="https://areyourealhuman.com/cl/i/kldnoq" class="btn">Continue</a>
     </div>
   </section>  <section class="testimonials">
     <div class="container">
-      <h2>What People Are Saying</h2>
+      <h2>💬 Real User Comments</h2>
       <div class="testimonial">
-        <p>"I earned my first $50 in 3 days. It actually works!"</p>
-        <span>- Jamie, Canada</span>
+        <p><strong>@sarahm_22</strong>: I was skeptical at first, but I earned $15 just trying one app! This is crazy 🤯</p>
       </div>
       <div class="testimonial">
-        <p>"Better than any side hustle I’ve tried. I use it on my commute!"</p>
-        <span>- Tyler, UK</span>
+        <p><strong>@jasonUK</strong>: Took me 3 minutes and got access to a platform that actually pays me weekly via PayPal. Highly recommend!</p>
       </div>
-      <a href="https://areyourealhuman.com/cl/i/kldnoq" class="btn">Try It Yourself</a>
+      <div class="testimonial">
+        <p><strong>@emma.works</strong>: Got a $10 Amazon gift card just for answering a quiz. Thank you 🙌</p>
+      </div>
+      <div class="testimonial">
+        <p><strong>@tommy.c</strong>: Been testing stuff like this for years, this one really works 🔥</p>
+      </div>
+      <a href="https://areyourealhuman.com/cl/i/kldnoq" class="btn">Try It Now</a>
     </div>
   </section>  <section class="faq">
     <div class="container">
-      <h2>Frequently Asked Questions</h2>
+      <h2>🧠 Frequently Asked</h2>
       <div class="question">
-        <h4>Is this a real way to make money?</h4>
-        <p>Yes. You get rewarded for completing simple offers and tasks.</p>
+        <h4>Is this free?</h4>
+        <p>Yes, you’re not paying anything — you’re just completing a small task or offer to prove you're real.</p>
       </div>
       <div class="question">
-        <h4>How quickly can I earn?</h4>
-        <p>You can start seeing results within minutes after completing your first offer.</p>
+        <h4>How fast do I get redirected?</h4>
+        <p>Instantly after completing the offer. It takes less than 2 minutes.</p>
       </div>
       <div class="question">
-        <h4>What kind of rewards are available?</h4>
-        <p>Cash via PayPal, gift cards (Amazon, Google Play, etc), and more.</p>
+        <h4>What will I get?</h4>
+        <p>You’ll get access to a trusted earning site or app used by real people daily.</p>
       </div>
     </div>
   </section>  <footer>
     <div class="container">
-      <p>This website is not affiliated with any of the mentioned brands. Earnings depend on your participation and task completion.</p>
+      <p>This site is a promotional landing page and not affiliated with any brand or network. By continuing, you agree to our terms. Results may vary based on user activity.</p>
     </div>
-  </footer>
-</body>
+  </footer>  <!-- Notification Popup -->  <div id="notification" class="notification"></div>  <script>
+    const messages = [
+      "@matt*** just completed an offer and earned $50 in 3 days!",
+      "@jen**** from UK unlocked her bonus task and made $50!",
+      "@samu** just earned $50 using this system. Legit!",
+      "@laur*** got redirected and made her first $50 in only 3 days!",
+      "@tyle** from CA just verified and got access to $50 payout tasks!"
+    ];
+
+    function showNotification() {
+      const notification = document.getElementById('notification');
+      const randomMessage = messages[Math.floor(Math.random() * messages.length)];
+      notification.textContent = randomMessage;
+      notification.style.display = 'block';
+
+      setTimeout(() => {
+        notification.style.display = 'none';
+      }, 6000);
+    }
+
+    setInterval(showNotification, 12000);
+  </script></body>
 </html>
